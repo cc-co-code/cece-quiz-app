@@ -27,7 +27,7 @@ section {
 }
 
 footer {
-  background-color: #333;
+  background-color: #df28c4;
   color: #fff;
   text-align: center;
   padding: 10px 0;
@@ -73,5 +73,23 @@ footer {
 }
 
 .answer-button:hover + .answer {
-  display: block; /* Antwort wird sichtbar, wenn die Karte (oder ein Button in der Karte) "gehovered" wird */
+  display: block; /* Answer visible when hovering above button */
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: #df28c4;
+}
+
+.footer-nav .nav-item {
+  color: white;
+  text-decoration: none; /* takes away the underlining of the links */
+  margin: 10px; /* distance between links */
+  font-size: 20px;
+}
+
+.footer-nav .nav-item:hover {
+  color: #e3ed0d; /* Changes color when hovering over link */
 }
