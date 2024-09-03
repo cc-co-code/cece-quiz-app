@@ -1,15 +1,15 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #2446db;
+  color: #e3ed0d;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #333;
-  color: #1cc7da;
-  padding: 10px 0;
+  background-color: #df28c4;
+  color: #e3ed0d;
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -34,3 +34,16 @@ footer {
   bottom: 0;
   width: 100%;
 }
+
+.question-card .answer-button {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #4CAF50; /* Grüne Hintergrundfarbe */
+    color: white; /* Weiße Schriftfarbe */
+    border: none; /* Entferne den Standardrahmen */
+    width: 50px; /* Gleiche Breite und Höhe für die Rundung */
+    height: 50px;
+    border-radius: 50%; /* Macht den Button rund */
+    text-align: center; /* Zentriert den Text */
+    font-size: 16px; /* Schriftgröße */
