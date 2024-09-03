@@ -1,15 +1,16 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #2446db;
+  color: #df28c4;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
 header {
-  background-color: #333;
-  color: #1cc7da;
-  padding: 10px 0;
+  background-color: #df28c4;
+  color: #e3ed0d;
+  padding: 15px 0;
   text-align: center;
 }
 
@@ -33,4 +34,44 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
+}
+
+.question-card {
+  background-color: #e3ed0d;
+  border: 1px;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.question-card {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.answer-button {
+  display: block;
+  margin: 5px;
+  padding: 20px;
+  background-color: orange;
+  color: lightslategray;
+  border: none;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.tags {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.answer {
+  display: none; /* answer is hidden */
+  margin-top: 20px; /* answer has more distance to button */
+}
+
+.answer-button:hover + .answer {
+  display: block; /* Antwort wird sichtbar, wenn die Karte (oder ein Button in der Karte) "gehovered" wird */
 }
