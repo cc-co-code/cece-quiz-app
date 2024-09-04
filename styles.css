@@ -15,15 +15,15 @@ header {
 }
 
 h1 {
-  margin: 0;
+  margin: 0; /* Removes any default margin around the h1 heading */
 }
 
 main {
-  padding: 20px;
+  padding: 20px; /* Adds padding inside the main content area */
 }
 
 section {
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Adds space at the bottom of each section */
 }
 
 footer {
@@ -31,39 +31,65 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  position: fixed;
-  bottom: 0;
+  position: fixed; /* Fixes the footer at the bottom of the page */
+  bottom: -20px;
   width: 100%;
 }
 
+.question-container {
+  display: flex; /* activates flexbox */
+  flex-wrap: wrap; /* puts cards on next side when not enough space */
+  gap: 20px; /* distance between cards */
+  justify-content: space-between; /* even distance */
+  padding: 20px; /* Adds padding around the question container */
+}
+
 .question-card {
+  background-color: #e3ed0d;
+  border: 1px; /* Sets a basic border */
+  border-radius: 20px; /* Rounds the corners of the card */
+  padding: 40px;
+  margin-bottom: 20px; /* Adds space below each card */
+  text-align: center;
+  width: calc(
+    33.333% - 20px
+  ); /* Makes each card take up one-third of the container with space in between */
+  box-sizing: border-box; /* Ensures padding and border are included in the card's width */
+}
+
+.bookmarks-container {
+  display: flex; /* activates flexbox */
+  flex-wrap: wrap; /* puts cards on next side when not enough space */
+  gap: 20px; /* distance between cards */
+  justify-content: space-between; /* even distance */
+  padding: 20px;
+}
+
+.bookmark-card {
   background-color: #e3ed0d;
   border: 1px;
   border-radius: 20px;
   padding: 40px;
   margin-bottom: 20px;
   text-align: center;
-}
-
-.question-card {
-  font-size: 20px;
-  margin-bottom: 15px;
+  width: calc(33.333% - 20px); /* three cards per row with 20px distance */
+  box-sizing: border-box;
 }
 
 .answer-button {
-  display: block;
+  display: block; /* Makes the button a block element (full width) */
   margin: 5px;
   padding: 20px;
   background-color: orange;
   color: lightslategray;
   border: none;
-  width: 100%;
+  width: 100%; /* Makes the button span the full width of the card */
   border-radius: 20px;
   font-size: 20px;
 }
 
 .tags {
-  margin-top: 20px;
+  margin-top: 20px; /* Adds space above the tags section */
   text-align: left;
 }
 
@@ -78,12 +104,13 @@ footer {
 
 .footer-nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-around; /* Spreads out the navigation items evenly */
   padding: 10px;
   background-color: #df28c4;
 }
 
 .footer-nav .nav-item {
+  display: inline-block; /* Ensures the navigation items are inline */
   color: white;
   text-decoration: none; /* takes away the underlining of the links */
   margin: 10px; /* distance between links */
@@ -92,4 +119,13 @@ footer {
 
 .footer-nav .nav-item:hover {
   color: #e3ed0d; /* Changes color when hovering over link */
+}
+
+.footer-nav .nav-item img {
+  vertical-align: middle; /* Vertically aligns the image to the middle of the text */
+  margin-right: 8px; /* Adds a small margin to the right of the image */
+}
+.footer-nav .nav-item.active {
+  color: #e3ed0d;
+  border-bottom: 2px solid #e3ed0d; /* Adds a yellow border under the active item */
 }
