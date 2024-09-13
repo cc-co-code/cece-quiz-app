@@ -93,15 +93,6 @@ footer {
   text-align: left;
 }
 
-.answer {
-  display: none; /* answer is hidden */
-  margin-top: 20px; /* answer has more distance to button */
-}
-
-.answer-button:hover + .answer {
-  display: block; /* Answer visible when hovering above button */
-}
-
 .footer-nav {
   display: flex;
   justify-content: space-around; /* Spreads out the navigation items evenly */
