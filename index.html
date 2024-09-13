@@ -5,28 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
     <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Quiz App</h1>
+      <h2>How much of a (Len)Nerd are you?</h2>
+
     </header>
     <main class="question-container">
-      <!-- Question Cards will go here -->
       <div class="question-card">
+        <div class="bookmark">
+
+          <img class="bookmark-icon" src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+        </div>
         <p>
           What is the name of the apartment building where the main characters
           live in The Big Bang Theory?
         </p>
-        <button class="answer-button">Show Answer</button>
-        <div class="answer">The Pasadena Cheesecake Factory Apartments</div>
+        <button class="answer-button" id="answer-button">Show Answer</button>
+        <div class="answer hidden" id="answer">
+          The Pasadena Cheesecake Factory Apartments
+        </div>
         <div class="tags">
-          <span>#html</span>
-          <span>#flexbox</span>
-          <span>#css</span>
+          <span>#building</span>
+          <span>#pasadena</span>
+          <span>#cheescake</span>
         </div>
       </div>
 
       <div class="question-card">
+        <div class="bookmark">
+          <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+        </div>
         <p>
           Which character has a Ph.D. in astrophysics and often uses the
           catchphrase "Bazinga!"?
@@ -34,52 +45,64 @@
         <button class="answer-button">Show Answer</button>
         <div class="answer">Sheldon Cooper</div>
         <div class="tags">
-          <span>#html</span>
-          <span>#layout</span>
-          <span>#css</span>
+          <span>#bazinga</span>
+          <span>#sheldon</span>
+          <span>#astrophysics</span>
         </div>
       </div>
 
 <div class="question-card">
+  <div class="bookmark">
+    <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+  </div>
     <p>
         What is the name of Howard Wolowitz's aerospace engineer wife?
     </p>
     <button class="answer-button">Show Answer</button>
     <div class="answer">Bernadette Rostenkowski</div>
     <div class="tags"
-    <span>#html</span>
-    <span>#layout</span>
-    <span>#css</span>
+    <span>#aerospace</span>
+    <span>#howard</span>
+    <span>#wife</span>
 </div>
 </div>
      
 <div class="question-card">
+  <div class="bookmark">
+    <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+  </div>
     <p>
         What is the name of Rajesh Koothrappali's beloved Yorkshire Terrier?
     </p>
     <button class="answer-button">Show Answer</button>
     <div class="answer">Cinnamon</div>
     <div class="tags"
-    <span>#html</span>
-    <span>#layout</span>
-    <span>#css</span>
+    <span>#rajesh</span>
+    <span>#dog</span>
+    <span>#terrier</span>
 </div>
 </div>
 
 <div class="question-card">
+  <div class="bookmark">
+    <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+  </div>
     <p>
         Who is known for his love of comic books, action figures, and a specific superhero-themed T-shirt?
     </p>
     <button class="answer-button">Show Answer</button>
     <div class="answer">Howard Wolowitz</div>
     <div class="tags"
-    <span>#html</span>
-    <span>#layout</span>
-    <span>#css</span>
+    <span>#comic books</span>
+    <span>#superhero</span>
+    <span>#t-shirt</span>
 </div>
 </div>
 
 <div class="question-card">
+  <div class="bookmark">
+    <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+  </div>
     <p>
         What is the name of the university where the main characters work and study?
     </p>
@@ -93,6 +116,9 @@
 </div>
 
 <div class="question-card">
+  <div class="bookmark">
+    <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+  </div>
     <p>
         Which character is a neurobiologist and is often the voice of reason in the group?
     </p>
@@ -106,6 +132,9 @@
 </div>
 
 <div class="question-card">
+  <div class="bookmark">
+    <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+  </div>
     <p>
         What is the name of the waitress and aspiring actress whom Leonard falls in love with at first sight?
     </p>
@@ -119,6 +148,9 @@
 </div>
 
 <div class="question-card">
+  <div class="bookmark">
+    <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+  </div>
     <p>
         What is Sheldon Cooper's favorite spot on the couch, where he insists on sitting?
     </p>
@@ -132,6 +164,9 @@
 </div>
 
 <div class="question-card">
+  <div class="bookmark">
+    <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
+  </div>
     <p>
         What is the title of the theme song that plays at the beginning of each episode?
     </p>
@@ -143,8 +178,8 @@
     <span>#css</span>
 </div>
 </div>
-     
-    </main>
+     </main>
+
     <footer>
       <nav class="footer-nav">
         <a href="index.html" class="nav-item active">
@@ -153,11 +188,11 @@
         <a href="bookmarks.html" class="nav-item">
           <img src="./resources/bookmark_transparent.png" alt="bookmarks" width="24" height="24">
         </a>
-        <a href="profile" class="nav-item">
+        <a href="profile.html" class="nav-item">
+
           <img src="./resources/profile.png" alt="profile" width="24" height="24">
         </a>
       </nav>
-      <!-- Navbar will go here -->
     </footer>
   </body>
 </html>
