@@ -129,3 +129,27 @@ footer {
   color: #e3ed0d;
   border-bottom: 2px solid #e3ed0d; /* Adds a yellow border under the active item */
 }
+
+.profile-container {
+  max-width: 600px;
+  margin: 0;
+  padding: 20;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  filter: grayscale(0);
+}
+
+.bookmark img {
+  cursor: pointer;
+  content: url("./resources/bookmark_transparent.png");
+}
+
+.bookmark img.active {
+  content: url("./resources/bookmark_filled.png"); /*activates pic */
+}
