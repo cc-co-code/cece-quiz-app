@@ -1,3 +1,4 @@
+// Bookmark icon toggle functionality
 const bookmarkIcons = document.querySelectorAll(".bookmark-icon");
 
 bookmarkIcons.forEach((bookmarkIcon) => {
@@ -6,6 +7,7 @@ bookmarkIcons.forEach((bookmarkIcon) => {
   });
 });
 
+// Show/hide answer functionality
 const questionCards = document.querySelectorAll(".question-card");
 
 questionCards.forEach((card) => {

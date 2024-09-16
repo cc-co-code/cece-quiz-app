@@ -81,7 +81,7 @@ footer {
   margin: 5px;
   padding: 20px;
   background-color: orange;
-  color: lightslategray;
+  color: #2446db;
   border: none;
   width: 100%; /* Makes the button span the full width of the card */
   border-radius: 20px;
@@ -143,4 +143,51 @@ footer {
 
 .bookmark img.active {
   content: url("./resources/bookmark_filled.png"); /*activates pic */
+}
+
+.card {
+  background-color: orange;
+  border: 1px; /* Sets a basic border */
+  border-radius: 20px; /* Rounds the corners of the card */
+  padding: 40px;
+  margin-bottom: 20px; /* Adds space below each card */
+  text-align: center;
+  width: calc(
+    33.333% - 20px
+  ); /* Makes each card take up one-third of the container with space in between */
+  box-sizing: border-box; /* Ensures padding and border are included in the card's width */
+}
+
+.new-card-form {
+  background-color: orange;
+  border: 1px; /* Sets a basic border */
+  border-radius: 20px; /* Rounds the corners of the card */
+  padding: 40px;
+  margin-bottom: 20px; /* Adds space below each card */
+  text-align: left;
+  width: calc(
+    33.333% - 20px
+  ); /* Makes each card take up one-third of the container with space in between */
+  box-sizing: border-box; /* Ensures padding and border are included in the card's width */
+}
+
+button {
+  display: block; /* Makes the button a block element (full width) */
+  margin: 30px;
+  padding: 5px;
+  background-color: #2446db;
+  color: #e3ed0d;
+  border: none;
+  width: 80%; /* Makes the button span the 80% of the card */
+  border-radius: 20px;
+  font-size: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+  background-color: #5aea26;
+}
+
+button:active {
+  transform: scale(0.95); /* Button shrinks when clicked */
 }
