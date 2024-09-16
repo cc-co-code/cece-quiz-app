@@ -98,6 +98,7 @@ footer {
   justify-content: space-around; /* Spreads out the navigation items evenly */
   padding: 10px;
   background-color: #df28c4;
+  animation: slideIn 1s ease-out;
 }
 
 .footer-nav .nav-item {
@@ -106,19 +107,21 @@ footer {
   text-decoration: none; /* takes away the underlining of the links */
   margin: 10px; /* distance between links */
   font-size: 20px;
+  transition: color 0.4s ease-in, transform 0.4s ease;
 }
 
 .footer-nav .nav-item:hover {
   color: #e3ed0d; /* Changes color when hovering over link */
+  transform: scale(1.5);
 }
 
 .footer-nav .nav-item img {
   vertical-align: middle; /* Vertically aligns the image to the middle of the text */
-  margin-right: 8px; /* Adds a small margin to the right of the image */
 }
+
 .footer-nav .nav-item.active {
   color: #e3ed0d;
-  border-bottom: 2px solid #e3ed0d; /* Adds a yellow border under the active item */
+  border-bottom: 5px solid #e3ed0d; /* Adds a yellow border under the active item */
 }
 
 .profile-container {
@@ -143,6 +146,18 @@ footer {
 
 .bookmark img.active {
   content: url("./resources/bookmark_filled.png"); /*activates pic */
+}
+
+.bookmark-icon {
+  cursor: pointer;
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.bookmark-icon.active {
+  filter: grayscale(0); /* Entfernt den Graustufenfilter (falls vorhanden) */
+  transform: scale(
+    1.2
+  ); /* Vergrößert das Icon leicht, um den Effekt zu verstärken */
 }
 
 .card {
@@ -271,4 +286,14 @@ body.dark-mode .slider {
 /* When checked in dark mode, change slider background color */
 body.dark-mode input:checked + .slider {
   background-color: #03345c;
+}
+
+#question-counter,
+#answer-counter {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+.overlimit {
+  color: red;
 }

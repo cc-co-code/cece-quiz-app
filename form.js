@@ -36,27 +36,33 @@ function updateCharacterCount(inputField, counterField, maxLength) {
   const remaining = maxLength - inputField.value.length;
   // Update the counter field with the remaining character count
   counterField.textContent = `${remaining} characters remaining`;
+  // If the remaining characters are less than 0, turn the counter red
+  if (remaining < 0) {
+    counterField.classList.add("overlimit"); // Add class to change color to red
+  } else {
+    counterField.classList.remove("overlimit"); // Remove class if within limit
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
   // Select the question input field and the counter for it
   const questionInput = document.querySelector("#question");
-  const questionCharacterCounter = document.querySelector("#question-counter");
+  const questionCounter = document.querySelector("#question-counter");
   // Select the answer input field and the counter for it
   const answerInput = document.querySelector("#answer");
-  const answerCharacterCounter = document.querySelector("#answer-counter");
+  const answerCounter = document.querySelector("#answer-counter");
   const maxLength = 150;
 
   // Add an event listener for the question input field
   // Every time the user types, the character count will update
   questionInput.addEventListener("input", function () {
-    updateCharacterCount(questionInput, questionCharacterCounter, maxLength);
+    updateCharacterCount(questionInput, questionCounter, maxLength);
   });
 
   answerInput.addEventListener("input", function () {
-    updateCharacterCount(answerInput, answerCharacterCounter, maxLength);
+    updateCharacterCount(answerInput, answerCounter, maxLength);
   });
   // Initialize the character counters when the page loads
-  updateCharacterCount(questionInput, questionCharacterCounter, maxLength);
-  updateCharacterCount(answerInput, answerCharacterCounter, maxLength);
+  updateCharacterCount(questionInput, questionCounter, maxLength);
+  updateCharacterCount(answerInput, answerCounter, maxLength);
 });
